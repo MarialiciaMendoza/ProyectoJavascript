@@ -10,16 +10,16 @@ let precio = 0;
 // Asignar precio a la seleccion correspondiente
 switch (seleccion) {
 case '1':
-    precio = 100;
+    precio = 35;
     break;
 case '2':
-    precio = 200;
+    precio = 50;
     break;
 case '3':
-    precio = 300;
+    precio = 40;
     break;
 case '4':
-    precio = 400;
+    precio = 100;
     break;
 default:
     alert('Selección no válida. Inténtelo de nuevo.');
