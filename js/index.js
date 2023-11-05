@@ -1,4 +1,4 @@
-// Solicitar al usuario que seleccione el servicio
+// Usuario selecciona el servicio a consultar
 const seleccion = prompt("Seleccione un servicio ingresando el número:\n\n" +
 "1. Analisis microbiológico\n" +
 "2. Analisis fisico-quimico\n" +
@@ -7,7 +7,7 @@ const seleccion = prompt("Seleccione un servicio ingresando el número:\n\n" +
 
 let precio = 0;
 
-// Verificar la selección del usuario y asignar el precio correspondiente
+// Asignar precio a la seleccion correspondiente
 switch (seleccion) {
 case '1':
     precio = 100;
@@ -26,7 +26,7 @@ default:
     break;
 }
 
-// Si la selección fue válida, indicar la cantidad de muestras
+// Si es válida, cliente debe indicar la cantidad de muestras
 if (precio > 0) {
 const cantidad = prompt(`Ingrese la cantidad de muestras para el servicio seleccionado.\nPrecio: $${precio}`);
 
