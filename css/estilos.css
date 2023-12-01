@@ -297,8 +297,80 @@ div .img-fluid {
     padding: 0;
   }
   
-  html, body {
-    font-size: 62.5%;
-    font-family: "Mitr", sans-serif;
-    overflow-x: hidden;
-  }
+html, body {
+  font-size: 62.5%;
+  font-family: "Mitr", sans-serif;
+  overflow-x: hidden;
+}
+
+.panel-cotizacion {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.panel-desgloce {
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.5);
+  box-shadow: 4px 2px 20px lightgray;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, button, select {
+  font-size: large;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: larger;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+.label-ser {
+  font-weight: 500;
+  font-size: larger;
+}
+
+.label-cantidad {
+  font-weight: 700;
+  font-size: larger;
+}
+
+.label-precio {
+  font-weight: 700;
+  font-size: larger;
+}
+
+.label-total {
+  font-size: x-large;
+  font-weight: 700;
+  font-size: larger;
+  color:#2d3f99;
+}
+
+.total {
+  font-weight: 700;
+  padding: 16px;
+  background-color: rgba(173, 216, 230, 0.46) !important;
+  border-end-end-radius: 20px;
+}
