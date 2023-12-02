@@ -17,7 +17,7 @@
     <!--css main-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- javascript -->
-    <script src="../js/index.js"></script>
+    <script defer src="../js/index.js"></script>
     <script src="../js/class.cotizador.js"></script>
 </head>
 <body class="w-100">
@@ -54,8 +54,8 @@
   </header>
   <main class="w-100">
       <div class="panel-cotizacion">
-        <h1 class="subtitulo_contacto">Cotiza aquí</h1>
-        <p>Para conocer la cotización del servicio que buscas, por favor, proporciona la siguiente información:</p>
+        <h1 class="subtitulo_contacto">Cotización</h1>
+        <p class="texto">Para conocer la cotización del servicio que buscas, por favor, proporciona la siguiente información:</p>
         <label for="selectServicio">¿Cuál es el servicio que solicitas?</label>
         <select id="selectServicio">
             <option disabled selected>Elige aquí...</option>
@@ -64,7 +64,7 @@
         <label for="cantidadMuestras">Cantidad de muestras para el análisis</label>
         <input type="number" id="cantidadMuestras" placeholder="Ingresa la cantidad" required>
         
-        <button id="btnCalcular" class="button-calcular" type="button">Calcular</button>
+        <button id="btnCotiza" class="button-cotiza" type="button">COTIZA AQUI</button>
       </div>
       <div>
         <h2 class="subtitulo_contacto">Contáctanos</h2>
