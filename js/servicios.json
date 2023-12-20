@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "descripcion": "Analisis microbiológico",
+      "precio": 35,
+      "cantidad": 0
+    },
+    {
+      "id": 2,
+      "descripcion": "Analisis fisico-quimico",
+      "precio": 50,
+      "cantidad": 0
+    },
+    {
+      "id": 3,
+      "descripcion": "Analisis bromatológico",
+      "precio": 40,
+      "cantidad": 0
+    },
+    {
+      "id": 4,
+      "descripcion": "Asesoría y asistencia técnica",
+      "precio": 100,
+      "cantidad": 0
+    }
+]

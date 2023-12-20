@@ -3,11 +3,9 @@ const selectServicio = document.querySelector("#selectServicio")
 const inputCantidad = document.querySelector("#cantidadMuestras")
 const btnCotiza = document.querySelector("#btnCotiza")
 const inputEnviar = document.querySelector("input#enviar")
+const URL = '../js/servicios.json'
 
-const servicios = [{id: 1, descripcion: 'Analisis microbiológico', precio: 35, cantidad :0},
-                   {id: 2, descripcion: 'Analisis fisico-quimico', precio: 50, cantidad :0},
-                   {id: 3, descripcion: 'Analisis bromatológico', precio: 40, cantidad :0},
-                   {id: 4, descripcion: 'Asesoría y asistencia técnica', precio: 100, cantidad :0},]
+const servicios = []
 
 function cargarServicios() {
     console.log("Selector element", selectServicio)
@@ -40,7 +38,15 @@ function cotizarServicio() {
 
     location.href = "contacto.html"
 }
-cargarServicios()
+function obtenerServicios(){
+    fetch(URL)
+    .then((response)=>response.json())
+    .then((data)=> {
+        servicios.push(...data);
+        cargarServicios();
+    });
+}
+obtenerServicios()
 
 btnCotiza.addEventListener("click", cotizarServicio)
 
