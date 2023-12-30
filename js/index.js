@@ -63,7 +63,7 @@ inputEnviar.addEventListener("click", (event) => {
     if (nombre && correo && telefono && comentarios) {
         // Mostrar el mensaje de éxito y restablecer el formulario
         Swal.fire({
-            title: "Formulario enviado correctamente",
+            title: "Formulario enviado correctamente!",
             confirmButtonText: "Cerrar",
             icon: "success",
             color: "green",
